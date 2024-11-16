@@ -63,7 +63,7 @@ import tkinter as tk
 from tkinter import simpledialog, ttk
 from PIL import Image, ImageTk
 
-def compat_amour():
+def compat_love():
     name_1 = simpledialog.askstring("Input", "What is your name ?", parent=root)
     name_1 = name_1.capitalize()
     name_2 = simpledialog.askstring("Input", "What is the name of the lucky one ?", parent=root)
@@ -74,9 +74,9 @@ def compat_amour():
         return
     sign_1 = sign_1.capitalize()
     sign_2 = sign_2.capitalize()
-    amour = compat(sign_1, sign_2)  
+    love = compat(sign_1, sign_2)  
     # Afficher la compatibilité
-    result_label.config(text=f"{name_1},you are astrologically {amour} with {name_2} !")
+    result_label.config(text=f"{name_1},you are astrologically {love} with {name_2} !")
 """""""""""
 Visual interface
 """""""""""
@@ -104,7 +104,7 @@ style.map("TButton", background=[("active", "lightgrey")])
 label = ttk.Label(root, text="Discover how much you are cosmically compatible !", font=("Arial", 14), background="magenta", foreground="magenta")
 label.pack(pady=20)
 # Start button
-btn_generate = ttk.Button(root, text="Ask the Universe", command=compat_amour)
+btn_generate = ttk.Button(root, text="Ask the Universe", command=compat_love)
 btn_generate.pack(pady=10)
 # Result label
 result_label = ttk.Label(root, text="", font=("Arial", 20), background="magenta", foreground="magenta")
